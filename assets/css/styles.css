@@ -47,11 +47,20 @@ nav a {
 nav a:hover {
   background-color: chartreuse;
   color: black;
+  cursor: pointer;
 }
 
 nav a:active {
   background-color: crimson;
 }
+
+.a-active {
+  background-color: chartreuse;
+}
+
+/* nav a:focus {
+  background-color: chartreuse;
+} */
 
 main {
   background-color: rgb(226, 109, 92);
