@@ -89,9 +89,18 @@ figure {
 }
 
 .logo {
-  position: absolute;
+  position: relative;
   left: 10vh;
 }
+
+.efecto-3d {
+  animation: efecto-3d 8s;
+  animation-iteration-count: infinite;
+}
+
+/* .efectpo-3d {
+  animation: rotate;
+} */
 
 article {
   margin-top: 5vh;
@@ -130,4 +139,14 @@ article p {
   width: 70vh;
   height: 5vh;
   left: 50vh;
+}
+
+
+@keyframes efecto-3d {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
 }
