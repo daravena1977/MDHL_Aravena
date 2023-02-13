@@ -50,7 +50,7 @@ nav a {
   box-shadow: 3px 5px 5px black;
 }
 nav a:hover {
-  background-color: chartreuse;
+  background-color:firebrick;
   color: black;
   cursor: pointer;
 }
