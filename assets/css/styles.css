@@ -5,23 +5,22 @@
   font-family: cursive;
 }
 
-/* body {
-  position: relative;
-} */
-
-
-
 h1 {
   font-style: italic;
   font-size: 2.5rem;
   font-weight: lighter;
-  background-color: rgb(218, 191, 68);
+  background: #F00000;
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000);
+  background: linear-gradient(to right, #DC281E, #F00000);
+
+  
 }
 
 header h2 {
   background-image: url(../img/design2_image1.jpg);
   min-height:70vh;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-position: top;
   background-color: transparent;
@@ -66,16 +65,21 @@ nav a:active {
 
 main {
   display: inline-block;
-  background-color: rgb(226, 109, 92);
+  background: #0B486B;
+  background: -webkit-linear-gradient(to right, #F56217, #0B486B);
+  background: linear-gradient(to right, #F56217, #0B486B);
   min-height: 60vh;
   min-width: 100%;
   position: relative;
 }
 
 section h2 {
-  background-color: rgb(114, 61, 70);
+  background-color: rgba(8, 7, 8, 0.466);
   height: 7vh;
   padding: 1vh;
+  color:rgba(0, 0, 0, 0.877);
+  position: relative;
+  top: -8vh;
 }
 
 h2 {
@@ -85,7 +89,7 @@ h2 {
 
 figure {
   position: absolute;
-  top: 100px;
+  top: 60px;
 }
 
 .logo {
@@ -98,19 +102,14 @@ figure {
   animation-iteration-count: infinite;
 }
 
-/* .efectpo-3d {
-  animation: rotate;
-} */
-
 article {
-  margin-top: 5vh;
   position: relative;
-  height: 8vh;
-  left: 40vh;
+  height: 14vh;
+  left: 50vh;
 }
 
 .event {
-  height: auto;
+  height: 10vh;
   width: 60vh;
 }
 
