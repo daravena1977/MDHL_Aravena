@@ -2,10 +2,128 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.897);
+}
+
+header {
+  display: flex;
+  height: 40vh;
+  margin: 2vh 20vw 0 20vw;
+  background-image: url("../img/design2_image1.jpg");
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: bisque;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 h1 {
+  text-shadow: 3px 3px 3px black;
+  text-decoration:solid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.01vh 20vw;
+  background-color: white;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #3FB7FD;
+  text-decoration: underline;
+  border-bottom: 3px solid #3FB7FD;
+}
+
+main {
+  display: flex;
+  margin: 0vh 20vw 0 20vw;
+  background-color: #dee0e1;
+  min-height: 60vh;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  /* border: 2px solid; */
+  flex-grow: 1;
+  align-self: flex-start;
+  margin: 1vh 0 0 0;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 20px #626262;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 4px 4px 5px #444444;
+  margin-bottom: 3vh;
+}
+
+
+section article {
+  padding: 2vh;
+  margin-left: 2vw;
+
+}
+
+article {
+  display: flex;
+  align-items: center;
+
+}
+ article * {
+  padding: 0 0 0 1rem;
+ }
+
+h2, h3 {
+  color: #444444;
+  /* color: #00557C; */
+}
+
+article p {
+  color: #626262;
+}
+
+section img {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+footer {
+  display: flex;
+  margin: 0vh 20vw 2vh 20vw;
+  background-color: #545454;
+  min-height: 10vh;
+  color: #CCCCCC;
+  align-items: center;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+
+
+
+/* h1 {
   font-style: italic;
   font-size: 2.5rem;
   font-weight: lighter;
@@ -147,4 +265,4 @@ article p {
   to {
       transform: rotateY(360deg);
   }
-}
+} */
