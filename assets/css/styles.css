@@ -6,7 +6,17 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.897);
+  background: #000000;
+  background: -webkit-linear-gradient(
+    to top,
+    #434343,
+    #000000
+  );
+  background: linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); 
 }
 
 header {
@@ -61,6 +71,10 @@ main {
   flex-wrap: wrap;
 }
 
+.main-game {
+  padding: 1rem;
+}
+
 section {
   display: flex;
   /* border: 2px solid; */
@@ -80,6 +94,39 @@ section h2 {
   /* margin-bottom: 1vh; */
 }
 
+table {
+  border-radius: 1rem;
+  box-shadow: 3px 3px 20px #626262;
+  background-color:#626262;
+  height: 50vh;
+  width: 50rem;
+  border-collapse: collapse;
+  padding: 1rem;
+  /* padding: 5rem 8rem 5rem 8rem; */
+}
+
+table, th, td {
+  border: 1.5px solid;
+  border-color: #cccccc;
+  text-align: center;
+  color: #cccccc;
+  
+}
+
+th,
+td {
+  text-align: start;
+  padding: 0.5rem;
+}
+
+caption {
+  color: #444444;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 4px 5px 5px #444444;
+  margin-bottom: 1rem;
+}
+
 section article {
   padding: 2vh;
   margin-left: 2vw;
@@ -89,11 +136,10 @@ section article {
   padding: 5rem;
 } */
 
-.section-game {
+/* .section-game {
   display: flex;
   flex-direction: column;
-  
-}
+} */
 
 /* table {
   display: flex;
@@ -102,14 +148,9 @@ section article {
   padding: 5rem;
 } */
 
-table {
-  padding: 5rem 8rem 5rem 8rem;
-}
 
-th, td {
-  text-align: start;
-  padding: 0.5rem;
-}
+
+
 
 .section-rules {
   display: flex;
