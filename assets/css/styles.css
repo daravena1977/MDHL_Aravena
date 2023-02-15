@@ -7,16 +7,8 @@
 
 body {
   background: #000000;
-  background: -webkit-linear-gradient(
-    to top,
-    #434343,
-    #000000
-  );
-  background: linear-gradient(
-    to top,
-    #434343,
-    #000000
-  ); 
+  background: -webkit-linear-gradient(to top, #434343, #000000);
+  background: linear-gradient(to top, #434343, #000000);
   position: relative;
 }
 
@@ -50,20 +42,17 @@ nav {
   background-color: white;
   padding: 0.5rem;
   flex-wrap: wrap;
-  
 }
 
 nav a {
   text-decoration: none;
   color: #444444;
   font-size: 16px;
-  
 }
 
 nav a:hover {
   color: #3fb7fd;
   text-decoration: underline;
-  
 }
 
 main {
@@ -93,14 +82,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-
 
 section {
   display: flex;
-  /* border: 2px solid; */
-  flex-grow: 1;
   align-self: flex-start;
   border-radius: 1rem;
   box-shadow: 3px 3px 20px #626262;
@@ -141,6 +126,7 @@ section article {
   flex-direction: column;
   width: 50vw;
   align-self: center;
+  align-items: center;
 }
 
 article {
@@ -150,9 +136,11 @@ article {
 
 article p {
   color: #626262;
+  font-size: 1.2rem;
 }
 
-.article-rules, .article-about {
+.article-rules,
+.article-about {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -168,18 +156,18 @@ table {
   padding: 2rem;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1.5px solid;
   border-color: #cccccc;
   text-align: center;
   color: #fff;
-  
 }
 
 th {
   color: #434343;
 }
-
 
 th,
 td {
@@ -198,12 +186,14 @@ caption {
 dt {
   color: #444444;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 19px;
 }
 
 dd {
+  font-size: 19px;
   color: #626262;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .all-play {
@@ -216,14 +206,26 @@ dd {
   margin-bottom: 1vh;
 }
 
+.p-contact {
+  color: #444444;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
 .subtittle-rules {
+  margin-bottom: 0.7rem;
   padding: 0.5rem;
+}
+
+.h3-upcoming {
+  padding-left: 1rem;
 }
 
 h2,
 h3 {
   color: #444444;
-  
+  font-size: 1.6rem;
+  padding: 1rem;
 }
 
 li {
@@ -234,7 +236,6 @@ main img {
   width: 30%;
   object-fit: cover;
   border-radius: 1rem 0 0 1rem;
-  /* box-shadow: 3px 3px 20px #626262; */
 }
 
 .image-about {
@@ -245,7 +246,7 @@ main img {
 }
 
 .image-contact {
-  width: 400px;
+  width: 500px;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 3px 3px 20px #626262;
