@@ -147,6 +147,7 @@ section article {
 #section-form {
   display: flex;
   flex-direction: column;
+  width: 45vw;
 }
 
 article {
@@ -315,6 +316,94 @@ main img {
   box-shadow: 3px 3px 20px #626262;
   margin-top: 1rem;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+fieldset {
+  /* border: none; */
+}
+
+.text-data-personal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;  
+}
+
+.text-data-personal input {
+  width: 25vw;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  border-color: #62626228;
+  border-style: solid;
+  border-radius: 0.2rem;
+  /* outline: none;   */
+}
+
+.text-data-personal input:active {
+  border-color: #3fb7fd;
+
+}
+
+.text-data-personal i {
+  align-self: flex-end;
+  margin-right: 8.5rem;
+  translate: 0 1.5rem;
+}
+
+.other-data-personal {
+  display: flex;
+  padding: 2rem;
+  width: 30vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 6vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  
+}
+
+#grarde {
+  align-self: start;
+}
+
+.other-data-personal input {
+  margin-bottom: 1rem;
+  margin-left: 0.2rem;
+}
+
+.other-data-personal p {
+  margin-bottom: 0.2rem;
+  font-weight: bolder;
+}
+
+/* #school {
+  height: 5vh;
+} */
+
+.flex-row {
+  display: flex;
+  justify-content: start;
+  height: 20vh;
+}
+
+.flex-colum {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-school {
+  width: 15vw;
+  padding: 1rem;
+}
+
+
 
 footer {
   display: flex;
