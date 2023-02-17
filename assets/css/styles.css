@@ -56,10 +56,9 @@ nav a {
 
 nav a:hover {
   color: #3fb7fd;
-  
 }
 
-.page-active{
+.page-active {
   border-bottom: 3px solid #3fb7fd;
 }
 
@@ -112,7 +111,7 @@ section article {
   margin-left: 2vw;
 }
 
-.section-game{
+.section-game {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,7 +146,10 @@ section article {
 #section-form {
   display: flex;
   flex-direction: column;
-  width: 45vw;
+  width: 40vw;
+  background-color: cornsilk;
+  color: azure;
+  border-radius: 1rem;
 }
 
 article {
@@ -159,7 +161,6 @@ article {
 article p {
   color: #626262;
   font-size: 1rem;
-  
 }
 
 .article-rules,
@@ -195,7 +196,7 @@ th {
 
 th,
 td {
-  text-align: start;
+  text-align: center;
   padding: 0.5rem;
 }
 
@@ -227,7 +228,6 @@ div dt {
 div dd {
   margin-left: 0.5rem;
   width: 35vw;
-  
 }
 
 .dl-game {
@@ -266,6 +266,19 @@ div dd {
   align-self: flex-start;
   padding-left: 5rem;
   font-size: 14px;
+}
+
+#maps {
+  padding: 1rem;
+  justify-content: center;
+  width: 45vw;
+  margin-left: 3rem;
+}
+
+#maps div {
+  width: 45vw;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .subtittle-rules {
@@ -317,15 +330,19 @@ main img {
   margin-top: 1rem;
 }
 
+.mail-contact {
+  color: #3fb7fd;
+  font-size: 32px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem 2rem 2rem 2rem;
-}
-
-fieldset {
-  /* border: none; */
+  background-color: cornsilk;
+  border-radius: 1rem;
+  border-color: #62626257;
 }
 
 .text-data-personal {
@@ -333,7 +350,11 @@ fieldset {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem;  
+  padding: 2rem;
+  background-color: cornsilk;
+  border-radius: 1rem;
+  border-color: #3fb7fd63;
+  margin-bottom: 1rem;
 }
 
 .text-data-personal input {
@@ -343,34 +364,27 @@ fieldset {
   border-color: #62626228;
   border-style: solid;
   border-radius: 0.2rem;
-  /* outline: none;   */
 }
 
 .text-data-personal input:active {
   border-color: #3fb7fd;
-
 }
 
 .text-data-personal i {
   align-self: flex-end;
-  margin-right: 8.5rem;
+  margin-right: 5.5rem;
   translate: 0 1.5rem;
 }
 
 .other-data-personal {
   display: flex;
   padding: 2rem;
-  width: 30vw;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 6vw;
+  justify-content: center;
+  background-color: cornsilk;
+  border-radius: 1rem;
+  border-color: #3fb7fd63;
   margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  
-}
-
-#grarde {
-  align-self: start;
 }
 
 .other-data-personal input {
@@ -381,16 +395,12 @@ fieldset {
 .other-data-personal p {
   margin-bottom: 0.2rem;
   font-weight: bolder;
+  color: #626262;
 }
-
-/* #school {
-  height: 5vh;
-} */
 
 .flex-row {
   display: flex;
   justify-content: start;
-  height: 20vh;
 }
 
 .flex-colum {
@@ -398,12 +408,118 @@ fieldset {
   flex-direction: column;
 }
 
-.check-school {
-  width: 15vw;
-  padding: 1rem;
+.check-section-form {
+  padding: 2rem;
+  border-radius: 1rem;
+  border-color: #3fb7fd63;
+  margin-bottom: 1rem;
 }
 
+.check-section-form * {
+  margin-bottom: 0.5rem;
+}
 
+.check-section-form p {
+  font-weight: bolder;
+  color: #444444;
+}
+
+.birth-gender {
+  width: 32vw;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-color: #3fb7fd63;
+  margin-bottom: 1rem;
+}
+
+.school {
+  width: 32vw;
+  justify-content: start;
+  padding: 1rem 0 1rem 0;
+}
+
+.grade-school {
+  margin-left: 0.2rem;
+}
+
+.gender {
+  height: 10vh;
+  width: 10vw;
+}
+
+.gender * {
+  padding: 0.2rem;
+}
+
+.check-school {
+  width: 15vw;
+  /* padding: 1rem; */
+  margin: 1rem 0 0 0.1rem;
+  border: none;
+}
+
+.check-school label {
+  margin-bottom: 1rem;
+}
+
+.check-pos {
+  margin: 1rem 0 0 0.1rem;
+  width: 7vw;
+}
+
+.check-uniform {
+  margin: 1rem 0 0 0.1rem;
+  width: 10vw;
+}
+
+.section-signature {
+  padding: 2rem;
+  border-radius: 1rem;
+  border-color: #3fb7fd63;
+  margin-bottom: 1rem;
+}
+
+.section-signature * {
+  margin-bottom: 1rem;
+}
+
+#signature {
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+}
+
+#signature * {
+  padding: 0.2rem;
+}
+
+#signature input {
+  width: 12vw;
+  /* margin-left: 10rem; */
+}
+
+.label-signature {
+  margin-left: 1rem;
+}
+
+.date-signature {
+  margin-left: 9.6rem;
+}
+
+.no-border {
+  border: none;
+}
+
+button {
+  padding: 1rem;
+  background-color: #006bc8;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+section iframe {
+  padding: 2rem;
+}
 
 footer {
   display: flex;

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       rel="shortcut icon"
       href="./assets/img/Logo_Mighty_ducks-01.ico"
       type="image/x-icon"
-    />
+    >
     <script
       src="https://kit.fontawesome.com/542394652c.js"
       crossorigin="anonymous"
@@ -31,7 +31,7 @@
           src="./assets/img/Logo_Mighty_ducks-01.png"
           alt="Logo de Mighty Ducks League"
           height="150"
-        />
+        >
       </figure>
     </header>
     <nav>
@@ -45,138 +45,217 @@
     <main>
       <section id="section-form">
         <h2>REGISTRATION FORM</h2>
-        <form action="./show_data.html">
-          <fieldset>
-            <div class="text-data-personal">
-              <!-- <label for="first-name">Player's First Name:</label> -->
+        <form class="no-border" action="./show_data.html">
+          <fieldset class="no-border">
+            <fieldset class="text-data-personal">
               <i class="fa-regular fa-user"></i>
               <input
                 type="text"
                 name="first-name"
                 id="first-name"
                 placeholder="First name"
-              />
-              <!-- <label for="last-name">Last Name:</label> -->
-              <i class="fa-regular fa-user"></i>
+              >
+              <i class="fa-regular fa-user"></i>              
               <input
                 type="text"
                 name="last-name"
                 id="last-name"
                 placeholder="Last name"
-              />
-              <!-- <label for="street-address">Street Address:</label> -->
+              >
               <i class="fa-solid fa-location-dot"></i>
               <input
                 type="text"
                 name="street-address"
                 id="street-address"
                 placeholder="Street Address"
-              />
-              <!-- <label for="city">City:</label> -->
+              >
               <i class="fa-solid fa-city"></i>
-              <input type="text" name="city" id="city" placeholder="City" />
-              <!-- <label for="zip-code">Zip Code:</label> -->
+              <input type="text" name="city" id="city" placeholder="City">              
               <input
                 type="number"
                 name="zip-code"
                 id="zip-code"
                 placeholder="Zip code"
-              />
-            </div>
-            <fieldset class="other-data-personal">
-              <div id="birth">
-                <label id="birth" for="birth">Birth Date:</label>
-                <input type="date" name="date" id="birth" />
-              </div>
-              <div id="gender">
-                <p>Gender:</p>
-                <label for="female">Female:</label>
-                <input type="radio" name="gender" id="female" />
-                <label for="male">Male:</label>
-                <input type="radio" name="gender" id="male" />
-              </div>
-              <div id="grade">
-                <p>Grade:</p>
-                <input type="radio" name="grade" id="pre-school" />
-                <label for="pre-school">Pre-School</label>
-                <input type="radio" name="grade" id="1st" />
-                <label for="1st">1st</label>
-                <input type="radio" name="grade" id="2nd" />
-                <label for="2nd">2nd</label>
-                <input type="radio" name="grade" id="3rd" />
-                <label for="3rd">3rd</label>
-                <input type="radio" name="grade" id="4th" />
-                <label for="4th">4th</label>
-                <input type="radio" name="grade" id="5th" />
-                <label for="5th">5th</label>
-              </div>
+              >
+            </fieldset>
+            <fieldset class="other-data-personal check-birth-gender">
+              <fieldset class="flex-colum no-border">
+                <fieldset class="flex-row birth-gender no-border">
+                  <label>
+                    Birth Date:
+                    <input type="date" name="birth" id="birth">
+                  </label>
+                  <fieldset class="flex-colum gender no-border">
+                    <label>Gender:</label>
+                    <fieldset class="flex-row no-border">
+                      <label>
+                        Female:
+                        <input
+                          type="radio"
+                          name="gender"
+                          id="female"
+                          value="f"
+                        >
+                      </label>
+                      <label>
+                        Male:
+                        <input type="radio" name="gender" id="male" value="m" >
+                      </label>
+                    </fieldset>
+                  </fieldset>
+                </fieldset>
+
+                <fieldset class="flex-row school no-border">
+                  <p>Grade:</p>
+                  <fieldset class="flex-row no-border grade-school">
+                    <label>
+                      <input
+                        type="radio"
+                        name="grade"
+                        id="pre-school"
+                        value="pre"
+                      >
+                      Pre-School
+                    </label>
+                    <label>
+                      <input type="radio" name="grade" id="1st" value="1st">
+                      1st
+                    </label>
+                    <label>
+                      <input type="radio" name="grade" id="2nd" value="2nd">
+                      2nd
+                    </label>
+                    <label>
+                      <input type="radio" name="grade" id="3rd" value="3rd">
+                      3rd
+                    </label>
+                    <label>
+                      <input type="radio" name="grade" id="4th" value="4th">
+                      4th
+                    </label>
+                    <label>
+                      <input type="radio" name="grade" id="5th" value="5th">
+                      5th
+                    </label>
+                  </fieldset>
+                </fieldset>
+              </fieldset>
             </fieldset>
           </fieldset>
-          <fieldset id="school">
+          <fieldset class="check-section-form">
             <h3>Which elementary School do you live near?</h3>
             <p>Closest School</p>
-            <fieldset class="flex-row">
+            <fieldset class="flex-row no-border">
               <fieldset class="flex-colum check-school">
-                <label>                    
-                    <input type="checkbox" name="aj-school" id="aj-school">
-                    Aj-Katzenmaier
+                <label>
+                  <input
+                    type="checkbox"
+                    name="aj-school"
+                    id="aj-school"
+                    value="aj"
+                  >
+                  Aj-Katzenmaier
                 </label>
-                <label>                    
-                    <input type="checkbox" name="marjo" id="marjo">
-                    Marjorie P Hart
+                <label>
+                  <input type="checkbox" name="marjo" id="marjo" value="mjo">
+                  Marjorie P Hart
                 </label>
-                <label>                    
-                    <input type="checkbox" name="green" id="green">
-                    Greenbay
+                <label>
+                  <input type="checkbox" name="green" id="green" value="gn">
+                  Greenbay
                 </label>
               </fieldset>
               <fieldset class="flex-colum check-school">
-                <label>                    
-                    <input type="checkbox" name="north" id="north">
-                    North Elementary
+                <label>
+                  <input type="checkbox" name="north" id="north" value="nt">
+                  North Elementary
                 </label>
-                <label>                    
-                    <input type="checkbox" name="howard" id="howard">
-                    Howard A Yeager
+                <label>
+                  <input type="checkbox" name="howard" id="howard" value="hw">
+                  Howard A Yeager
                 </label>
-                <label>                    
-                    <input type="checkbox" name="south" id="south">
-                    South Elementary
+                <label>
+                  <input type="checkbox" name="south" id="south" value="st">
+                  South Elementary
                 </label>
               </fieldset>
             </fieldset>
           </fieldset>
-          <fieldset>
+          <fieldset class="check-section-form">
             <h3>
               What position(s) do you normally play? (check all the apply)
             </h3>
-            <input type="checkbox" name="forward" id="forward" />
-            <label for="forward">Forward</label>
-            <input type="checkbox" name="mid" id="mid" />
-            <label for="mid">Midfield</label>
-            <input type="checkbox" name="def" id="def" />
-            <label for="def">Defense</label>
-            <input type="checkbox" name="goal" id="goal" />
-            <label for="goal">Goalkeeper</label>
+            <fieldset class="flex-row no-border">
+              <fieldset class="flex-colum check-pos no-border">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="forward"
+                    id="forward"
+                    value="fw"
+                  >
+                  Foward
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="defense"
+                    id="defense"
+                    value="df"
+                  >
+                  Defense
+                </label>
+              </fieldset>
+              <fieldset class="flex-colum check-pos no-border">
+                <label>
+                  <input type="checkbox" name="mid" id="mid" value="mid">
+                  Midfield
+                </label>
+                <label>
+                  <input type="checkbox" name="goal" id="goal" value="goal">
+                  Goalkeeper
+                </label>
+              </fieldset>
+            </fieldset>
           </fieldset>
-          <fieldset>
+          <fieldset class="check-section-form">
             <h3>Uniform Size</h3>
-            <input type="radio" name="uniform" id="y-small" />
-            <label for="y-small">Youth Small</label>
-            <input type="radio" name="uniform" id="y-medium" />
-            <label for="y-medium">Youth Medium</label>
-            <input type="radio" name="uniform" id="y-large" />
-            <label for="y-large">Youth Large</label>
-            <input type="radio" name="uniform" id="small" />
-            <label for="small">Small</label>
-            <input type="radio" name="uniform" id="medium" />
-            <label for="medium">Medium</label>
-            <input type="radio" name="uniform" id="large" />
-            <label for="large">Large</label>
-            <input type="radio" name="uniform" id="e-large" />
-            <label for="e-large">Extra-Large</label>
+            <fieldset class="flex-row no-border">
+              <fieldset class="flex-colum check-uniform no-border">
+                <label>
+                  <input type="radio" name="size" id="y-small" value="ys">
+                  Youht Small
+                </label>
+                <label>
+                  <input type="radio" name="size" id="y-medium" value="ym">
+                  Youth Medium
+                </label>
+                <label>
+                  <input type="radio" name="size" id="y-large" value="yl">
+                  Youth Large
+                </label>
+                <label>
+                  <input type="radio" name="size" id="small" value="s">
+                  Small
+                </label>
+              </fieldset>
+              <fieldset class="flex-colum check-uniform no-border">
+                <label>
+                  <input type="radio" name="size" id="medium" value="m">
+                  Medium
+                </label>
+                <label>
+                  <input type="radio" name="size" id="large" value="l">
+                  Large
+                </label>
+                <label>
+                  <input type="radio" name="size" id="x-large" value="xl">
+                  Extra-Large
+                </label>
+              </fieldset>
+            </fieldset>
           </fieldset>
-          <fieldset>
+          <fieldset class="section-signature">
             <h3>Permission to Pay</h3>
             <p>
               I' the parent or guardian of the minor registrant, agree that the
@@ -193,13 +272,29 @@
               transportation. By signing below, I herebyagree and authorizethe
               above. In addtion, by signing below, I also acknowledge that I
               have read the cancellation policy and agree to its terms.
-              <label for="signature">Parent/Guardian Signature:</label>
-              <input type="text" name="signature" id="signature" />
-              <label for="date">Date</label>
-              <input type="date" name="date" id="date" />
             </p>
+            <fieldset class="flex-colum no-border">
+              <label>
+                Parent/Guardian Signature:
+                <input
+                  class="label-signature"
+                  type="text"
+                  name="signature"
+                  id="signature"
+                >
+              </label>
+              <label>
+                Date:
+                <input
+                  class="date-signature"
+                  type="date"
+                  name="date"
+                  id="date"
+                >
+              </label>
+            </fieldset>
+            <button class="no-border" type="submit">Enviar Iformación</button>
           </fieldset>
-          <button type="submit">Enviar Iformación</button>
         </form>
       </section>
     </main>
