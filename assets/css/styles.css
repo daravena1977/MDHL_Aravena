@@ -54,8 +54,13 @@ nav a {
   padding: 0.5rem;
 }
 
+nav:active {
+  transition-duration: 2s;
+}
+
 nav a:hover {
   color: #3fb7fd;
+  transition: color 0.5s ease;
 }
 
 .page-active {
