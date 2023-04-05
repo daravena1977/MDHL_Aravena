@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    >
     <link
       rel="shortcut icon"
       href="./assets/img/Logo_Mighty_ducks-01.ico"
@@ -16,45 +22,83 @@
   <body>
     <header>
       <h1>Mighty Ducks Hockey League</h1>
-      <h2>Banner</h2>
-      <nav>
-        <a class="a-active" href="#">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-    </header>
-    <main>
       <figure>
-        <img
-          class="logo efecto-3d"
+        <img          
           src="./assets/img/Logo_Mighty_ducks-01.png"
           alt="Logo de Mighty Ducks League"
           height="150"
         >
       </figure>
+    </header>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="./game_info.html">GAME INFORMATION</a>
+      <a href="./rules.html">RULES & POLICIES</a>
+      <a href="./about.html">ABOUT</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
+    <main>
       <section>
-        <h2>Upcoming Events</h2>
-        <article class="event">
-          <h3>August 4</h3>
-          <p>MDSL Fundraiser</p>
-        </article>
-        <article class="event">
-          <h3>August 16</h3>
-          <p>Season Kick-off: Meet the Teams</p>
-        </article>
-        <article class="event">
-          <h3>September 1</h3>
-          <p>First Game of the Season (Check Game Schedule for details)</p>
-        </article>
-      </section>
-      <figure class="section-figure">
         <img
-          class="section-imagen"
           src="./assets/img/hockey_1.jpg"
           alt="Jugadores de Hockey"
-          height="300"
         >
-      </figure>
+        <div>
+          <h2>Upcoming Events</h2>
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-calendar-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+              />
+            </svg>
+            <h3 class="h3-upcoming">August 4:</h3>
+            <p>MDSL Fundraiser</p>
+          </article>
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-calendar-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+              />
+            </svg>
+            <h3 class="h3-upcoming">August 16:</h3>
+            <p>Season Kick-off: Meet the Teams</p>
+          </article>
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-calendar-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+              />
+            </svg>
+            <h3 class="h3-upcoming">September 1:</h3>
+            <p>First Game of the Season (Check Game Schedule for details)</p>
+          </article>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>© Todos los Derechos Reservados |</p>
+      <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+    </footer>
   </body>
 </html>

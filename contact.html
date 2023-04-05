@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./assets/css/styles.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    >
     <link
       rel="shortcut icon"
       href="./assets/img/Logo_Mighty_ducks-01.ico"
@@ -15,22 +21,23 @@
   <body>
     <header>
       <h1>Mighty Ducks Hockey League</h1>
-      <h2>Banner</h2>
-      <nav>
-        <a href="./index.html">Home</a> <a href="./about.html">About</a>
-        <a class="a-active" href="#">Contact</a>
-      </nav>
-    </header>
-    <main>
       <figure>
         <img
-          class="logo efecto-3d"
           src="./assets/img/Logo_Mighty_ducks-01.png"
           alt="Logo de Mighty Ducks League"
           height="150"
         >
       </figure>
-      <section>
+    </header>
+    <nav>
+      <a href="./index.html">HOME</a>
+      <a href="./game_info.html">GAME INFORMATION</a>
+      <a href="./rules.html">RULES & POLICIES</a>
+      <a href="./about.html">ABOUT</a>
+      <a href="#">CONTACT</a>
+    </nav>
+    <main class="main-contact">
+      <section class="section-contact">
         <h2>Contact</h2>
         <p class="p-contact">
           Please email us at
@@ -38,14 +45,15 @@
         </p>
         <p class="p-contact">We reply to your email as soon as we can</p>
       </section>
-      <figure class="section-figure">
-        <img
-          class="section-imagen"
-          src="./assets/img/hockey_3.jpg"
-          alt="Jugadores de Hockey"
-          height="300"
-        >
-      </figure>
+      <img
+        class="image-contact"
+        src="./assets/img/hockey_3.jpg"
+        alt="Jugadores de Hockey"
+      >
     </main>
+    <footer>
+      <p>© Todos los Derechos Reservados | </p>
+      <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+    </footer>
   </body>
 </html>
