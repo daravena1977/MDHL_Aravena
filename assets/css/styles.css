@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  background: #F00000;
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000);
+  background: linear-gradient(to right, #DC281E, #F00000);
+
+  
+}
+
+header h2 {
+  background-image: url(../img/design2_image1.jpg);
+  min-height:70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: transparent;
+}
+
+nav {
+  position: absolute;
+  right: 5vh;
+  top: 3%;
+  min-height: 5vh;
+}
+
+nav a {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.3em;
+  display: inline-block;
+  color: white;
+  height: 2.9rem;
+  width: 9rem;
+  text-decoration: none;
+  border-color: black;
+  border-style: solid;
+  background-color: rgb(96, 96, 235);
+  border-width: thin;
+  box-shadow: 3px 5px 5px black;
+}
+nav a:hover {
+  background-color:firebrick;
+  color: black;
+  cursor: pointer;
+}
+
+nav a:active {
+  background-color: crimson;
+}
+
+.a-active {
+  background-color: chartreuse;
+}
+
+main {
+  display: inline-block;
+  background: #0B486B;
+  background: -webkit-linear-gradient(to right, #F56217, #0B486B);
+  background: linear-gradient(to right, #F56217, #0B486B);
+  min-height: 60vh;
+  min-width: 100%;
+  position: relative;
+}
+
+section h2 {
+  background-color: rgba(8, 7, 8, 0.466);
+  height: 7vh;
+  padding: 1vh;
+  color:rgba(0, 0, 0, 0.877);
+  position: relative;
+  top: -8vh;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+figure {
+  position: absolute;
+  top: 60px;
+}
+
+.logo {
+  position: relative;
+  left: 10vh;
+}
+
+.efecto-3d {
+  animation: efecto-3d 8s;
+  animation-iteration-count: infinite;
+}
+
+article {
+  position: relative;
+  height: 14vh;
+  left: 50vh;
+}
+
+.event {
+  height: 10vh;
+  width: 60vh;
+}
+
+.article-about {
+  width: 70vh;
+}
+
+article p {
+  margin-left: 2em;
+}
+
+.section-figure {
+  margin-left: 6vh;
+  right: 15vh;
+}
+
+.section-imagen {
+  border-radius: 1rem;
+  box-shadow: 3px 5px 5px black;
+}
+
+.p-contact {
+  margin-top: 5vh;
+  position: relative;
+  font-size: 1.5rem;
+  width: 70vh;
+  height: 5vh;
+  left: 50vh;
+}
+
+
+@keyframes efecto-3d {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
